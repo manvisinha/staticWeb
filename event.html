@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management Site</title>
+    <link rel="stylesheet" href="event.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Event Management</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="section-bg">
+      <h2>Welcome to Our Event Management Platform</h2>
+      <p>Organize, manage, and enjoy events with ease!</p>
+    </section>
+
+    <section id="events" class="section-bg">
+      <h2>Upcoming Events</h2>
+      <div class="event-card">
+        <h3>Music Festival 2024</h3>
+        <p>Date: December 15, 2024</p>
+        <p>Location: UB City</p>
+      </div>
+      <div class="event-card">
+        <h3>Technology Expo 2024</h3>
+        <p>Date: January 10, 2025</p>
+        <p>Location: City Tech Center</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section-bg">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="formResponse"></p>
+    </section>
+
+    <script src="event.js"></script>
+  </body>
+</html>
